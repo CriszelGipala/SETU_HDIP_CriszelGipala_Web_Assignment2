@@ -50,11 +50,10 @@ Weather icons used in this project can be found at:
 
 
 ### Contributing Guidelines
-- If you would like to modify or extend the code, feel free to contact me using the information below.
+- If you would like to modify or extend the code, feel free to send Pull Requests to this github repository.
 
 ### Contact Information
-- gipalacriszel512@gmail.com
-- 0833409239
+- https://github.com/CriszelGipala
 
 ### Acknowledgements
 - ChatGPT - for clarifying concepts
@@ -69,6 +68,4 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 
 * [Eleventy](https://www.11ty.dev/)
 * [Bulma](https://bulma.io/)
-
-
-
+* [Netlify](https://www.netlify.com/) - URL for my deployed Wether Weather: 
