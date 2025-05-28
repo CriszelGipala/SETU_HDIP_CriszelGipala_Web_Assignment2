@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</head>
+<body>
+  <section class="section">
+    <div class="container has-text-centered">
+      <h1 class="title is-2">Dashboard</h1>
+      <h2 class="subtitle is-4">Today</h2>
+      <div id="dashboard" class="columns is-multiline is-centered"></div>
+    </div>
+  </section>
+
+  <!-- first is to load the weatherData file as a global script -->
+<script src="/js/lab_weather_data.js"></script>
+
+<!-- then load your module that uses the global `weatherData` -->
+<script type="module">
+  import { renderDashboard } from "/js/components/city-list.js";
+  renderDashboard(weatherData); // works because weatherData is now global
+</script>
+
+</body>
+</html>

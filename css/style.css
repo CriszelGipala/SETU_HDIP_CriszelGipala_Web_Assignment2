@@ -1,0 +1,184 @@
+/* Dashboard container should be a flexible grid */
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* City cards */
+.city-card {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  width: 150px; /* OR 30%, pick one and make it responsive with media query if needed */
+  aspect-ratio: 1 / 1;
+  margin: 2%;
+}
+
+.city-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.city-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* WEATHER ICONS */
+.weather-icon {
+  width: 50%;
+  max-width: 64px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.temps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+
+
+
+/* GENERAL RESET & FONT */
+body {
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+/* LEFT COLUMN: Big icon + City name */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+#main-sun-icon {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.city-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* RIGHT COLUMN: Weather cards stacked vertically */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  width: 65%;
+}
+
+.forecast-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow wrapping if needed */
+  gap: 1%;
+  margin-top: 2%;
+  overflow: hidden; /* hide scroll entirely */
+}
+}
+
+/* INDIVIDUAL FORECAST CARDS */
+.forecast-row .card {
+  flex: 1 1 12%; /* auto-resize to fit exactly 7 cards */
+  text-align: center;
+  padding: 5%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+/* BOX AND CARD BASE STYLES */
+.box,
+.card {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box * {
+  color: white !important;
+}
+
+.card * {
+  color: white !important;
+}
+
+
+
+/* CITY NAME LINKS */
+.city-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* TITLES INSIDE CARDS/BOXES */
+.box .title,
+.box .subtitle,
+.card .title,
+.card .subtitle {
+  color: white !important;
+}
+
+/* DEFAULT HEADING STYLES (outside cards) */
+.title,
+.subtitle {
+  color: black;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 80%) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-column,
+  .left-column {
+    width: 100%;
+  }
+
+  .forecast-row .card {
+    min-width: 30%;
+  }
+}
+
+
