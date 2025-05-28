@@ -68,4 +68,4 @@ Hot reloading is enabled, so any changes you make to your files will be reflecte
 
 * [Eleventy](https://www.11ty.dev/)
 * [Bulma](https://bulma.io/)
-* [Netlify](https://www.netlify.com/) - URL for my deployed Wether Weather: 
+* [Netlify](https://www.netlify.com/) - URL for my deployed Wether Weather: https://criszel-gipala-web-assignment-2.netlify.app/
